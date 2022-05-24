@@ -1,25 +1,18 @@
-import { Category } from './components/Category';
+import {useEffect, useState} from 'react';
+import CategoryList from './components/CategoryList';
 import './App.css';
 
+
 function App() {
- 
+  // const [categories,setCategories]= useState([])
+
+
 
   return (
-    <>
+    <div className="container">
       <h1> Let's Play Trivia</h1>
-      {/* {category.map((cat, index) => {
-        if (cat.category) {
-          return (
-
-            <Category
-            name={[0].category}
-            difficulty={[0].difficulty}
-            key={index}
-        />
-          )
-        }
-        })} */}
-    </>
+        <CategoryList></CategoryList>
+    </div>
   )
 }
 
