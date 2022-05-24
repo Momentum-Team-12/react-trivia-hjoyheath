@@ -17,7 +17,7 @@ function CategoryList() {
   return (
       <div className="category-list">
       {categories.map((cat) => (
-            <Category {...cat}
+        <Category {...cat}
             key={cat.id}/>
         ))}
       </div>
