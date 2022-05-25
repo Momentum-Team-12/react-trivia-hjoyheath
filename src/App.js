@@ -10,7 +10,8 @@ function App() {
 
   return (
     <div className="container">
-      <h1> Let's Play Trivia</h1>
+      <h1>Let's Play Trivia!</h1>
+      <h2>Select a Category:</h2>
         <CategoryList></CategoryList>
     </div>
   )

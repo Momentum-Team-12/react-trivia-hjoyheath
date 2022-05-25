@@ -2,9 +2,6 @@ body {
     margin: 0;
 }
 
-h1 {
-    margin-left: 2%;
-}
 
 .container {
     display:flex;
@@ -26,7 +23,6 @@ h1 {
 .category-name {
     display: flex;
     width: 200px;
-    border: solid 2px black;
     border-radius: 5%;
     cursor: pointer;
     justify-content: center;
