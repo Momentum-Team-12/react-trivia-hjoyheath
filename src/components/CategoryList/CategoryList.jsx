@@ -17,7 +17,6 @@ function CategoryList() {
     }) 
 }, [])
 
-
   return (
       selectedCategory ? <Questions category={selectedCategory}/> :
       <div className="category-list">
