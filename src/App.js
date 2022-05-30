@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import CategoryList from './components/CategoryList';
+import Game from './components/Game';
 import './App.css';
 
 

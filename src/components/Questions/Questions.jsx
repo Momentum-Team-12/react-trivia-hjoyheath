@@ -5,8 +5,9 @@ import CategoryList from "../CategoryList";
 
 
 export default function Questions(props) {
-    const [questions,setQuestions]= useState([])
-    const [isAnswered, setIsAnswered] = useState([false])
+    const [questions,setQuestions] = useState([]);
+    const [isAnswered, setIsAnswered] = useState('');
+    
     
 
     useEffect(() => {
@@ -17,25 +18,26 @@ export default function Questions(props) {
         }) 
     }, []);
     
+    
     return (
         <div className="container">
             {questions.length > 0 && (
                 <fieldset>
                 <h1>{questions[0].question}</h1>
-                <div role="radio-group" aria-label={questions[0].question}>
+                <div role="radiogroup" aria-label={questions[0].question}>
                 {questions[0].incorrect_answers.map((value, index) => (
                     <label key={index}>
                         {value}
-                        <input type="radio" name="group-name"/>
+                        <input style={{fontSize:30}} type="radio" name="group-name" />
                     </label>
             ))}
                 </div>
                 </fieldset>
             ) }
         </div>
-    ) 
-
+    )
 }
+
         
 
 Questions.propTypes = {
